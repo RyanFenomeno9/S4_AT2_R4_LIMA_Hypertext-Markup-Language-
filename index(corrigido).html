@@ -1,0 +1,74 @@
+<!-- Código básico pra configurar html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Colocando nome da aba no navegador -->
+    <title>PixelGear eSports Store</title>
+    <!-- Configuração do tamanho das imagens e ajuste dos títulos no head correto -->
+    <style>
+        img {
+            width: 100px;
+            height: auto;
+        }
+        /* Força o h3 a ter EXATAMENTE o mesmo tamanho de fonte do h4 original (16px) */
+        h3.nome-produto {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+        }
+    </style>
+</head>
+
+<!-- body define aquilo que irá realmente aparecer na página -->
+<body>
+
+    <!-- Título do site -->
+    <h1>PixelGear eSports Store</h1>
+
+    <!-- Descrições para alguém novo conhecer o site -->
+    <h2>Nossa missão, visão e valores:</h2>
+    <!-- usando o ul para criar uma lista de bolinhas -->
+    <ul>
+        <li>
+            <strong>Missão:</strong> Equipar gamers e pro-players com a tecnologia mais avançada do mercado para elevar sua performance competitiva.
+        </li>
+
+        <li>
+            <strong>Visão:</strong> Ser a referência principal em montagem de PCs e periféricos para eSports na América Latina até 2030.
+        </li>
+
+        <li>
+            <strong>Valores:</strong> Desempenho sem compromisso, paixão pelos eSports, transparência técnica e inovação contínua.
+        </li>
+    </ul>
+
+    <!-- Inserindo os produtos do nosso site -->
+    <h2>Nossos produtos:</h2>
+    <ul>
+        <li>
+            <h3>Destaques</h3>
+
+            <h3 class="nome-produto">Mouse gamer</h3>
+            <!-- Colocando a imagem que deve aparecer no site com link da web -->
+            <img src="https://images.tcdn.com.br/img/img_prod/1384213/mouse_gamer_7d_4800_dpi_rgb_ms_g280_exbom_20975_2_a76a308582c12c763aec4d37d3540ea6.jpg" alt="Mouse Gamer 7D RGB Exbom">
+            <!-- Inserindo informações sobre o produto usando tags como del para riscar o texto e strong para deixar o texto em negrito usando o style="color" pra mudar a cor do texto-->
+            <p>preço: <del>R$5600,00</del> <strong style="color: rgb(0, 89, 255);">R$ 2500,00</strong><strong style="color: rgb(54, 192, 8);"> (67% desconto)</strong></p>
+            <!-- colocando um link no texto clicável usando <a href=""> -->
+            <a href="https://www.youtube.com" target="_blank">
+                <strong style="color: rgb(54, 192, 8); font-size: 1.5em; display: block; margin: 10px 0;">COMPRAR</strong>
+            </a>
+
+            <h3 class="nome-produto">Teclado gamer</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX82fRzqFUmR9jMVb882zZj-H-4GpyDfHmPPFmQMON4g&s=10" alt="Teclado Gamer">
+            <p>preço: <del>R$2500,00</del> <strong style="color: rgb(0, 89, 255);">R$ 1000,00</strong><strong style="color: rgb(54, 192, 8);"> (67% desconto)</strong></p>
+            <a href="https://www.youtube.com" target="_blank">
+                <strong style="color: rgb(54, 192, 8); font-size: 1.5em; display: block; margin: 10px 0;">COMPRAR</strong>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
